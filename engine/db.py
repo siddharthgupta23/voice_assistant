@@ -11,9 +11,8 @@ cursor.execute(query)
 # query="CREATE TABLE IF NOT EXISTS web_content(id integer primary key, name VARCHAR(100),url VARCHAR(1000))"
 # cursor.execute(query)
 
-# query="INSERT INTO web_content  VALUES (null,'youtube','https://www.youtube.com/')"
-# cursor.execute(query)
-# conn.commit()
+
+
 
 app_name="android studio"
 cursor.execute('SELECT path FROM sys_command WHERE name IN (?)', (app_name,))
